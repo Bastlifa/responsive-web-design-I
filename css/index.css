@@ -78,6 +78,11 @@ body
     margin: 0px 10px 0px 100px;
 }
 
+.mobileHR
+{
+    display: none;
+}
+
 nav
 {
 	display: flex;
@@ -93,17 +98,11 @@ nav a
 {
 	text-decoration: none;
 	color: gray;
-	margin: 25px;
 }
 
 nav img
 {
 	margin-left: 50px;
-}
-
-nav a:first-child
-{
-	margin-left: 0px;
 }
 
 nav a:hover
@@ -197,4 +196,106 @@ hr
 {
 	margin-top: 30px;
 	text-align: center;
+}
+
+.logoMobile
+{
+    display: none;
+    
+}
+
+@media(max-width: 800px)
+{
+    .logo
+    {
+        display: none;
+    }
+    .logoMobile
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .attnGrabber
+    {
+        display: block;
+        margin-left: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .codeCircle
+    {
+        display: none;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .logo
+    {
+        display: none;
+    }
+    .mobileHR
+    {
+        display: block;
+        border: 1px solid black;
+        width: 100%
+    }
+    nav
+    {
+        margin-top:180px;
+        font-size: 20px;
+        font-weight: bold;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+    nav a
+    {
+        margin: 10px 0px;;
+    }
+    nav a .mobileHR
+    {
+        margin: 25px;
+    }
+    .attnGrabber
+    {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        margin-left: 0px;
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+    .codeCircle
+    {
+        display: none;
+    }
+    .featuresAbout
+    {
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .sideBySideTextSections
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .middle-img
+    {
+        height: 100px;
+    }
+    .srvProVis
+    {
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        margin-top:50px;
+        margin-bottom: 20px;
+    }
+    .sbsTS2
+    {
+        margin-bottom: 50px;
+    }
 }
