@@ -295,6 +295,14 @@ footer
 
 @media(max-width: 800px)
 {
+    nav
+    {
+        justify-content: space-between;
+        margin:20px 0px;
+        height: 40px;
+        /* max-width: 100%; */
+    }
+    nav a {margin: auto;}
     .container
     {
         margin: 0px 10px 0px 10px;
