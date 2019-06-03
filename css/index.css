@@ -88,26 +88,25 @@ h1, h2, h3, h4, h5 {
 nav
 {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	margin:20px 0px;
     height: 40px;
+    /* max-width: 100%; */
 }
 
 nav a
 {
 	text-decoration: none;
     color: gray;
-    margin-right: 61px;
+    /* margin-right: 61px; */
+    margin-right: auto;
 }
-nav a:last-child
-{
-    margin-right: 50pxpx;
-}
+
 
 nav img
 {
-	margin-left: 29px;
+    margin-left: 19px;
 }
 
 nav a:hover
@@ -296,7 +295,7 @@ footer
 
 @media(max-width: 800px)
 {
-    body
+    .container
     {
         margin: 0px 10px 0px 10px;
     }
@@ -321,6 +320,10 @@ footer
     .codeCircle
     {
         display: none;
+    }
+    .service
+    {
+        height: 320px;
     }
 }
 
@@ -391,5 +394,28 @@ footer
     .sbsTS2
     {
         margin-bottom: 50px;
+    }
+    .services-header-img
+    {
+        display: none;
+    }
+    .servicesOverview
+    {
+        margin-top: 200px;
+    }
+    .service
+    {
+        height: 420px;
+    }
+    .serviceFooterRow
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column-reverse;
+        margin: 30px 0px;
+    }
+    .serviceFactsCol
+    {
+        margin-top: 40px;
     }
 }
