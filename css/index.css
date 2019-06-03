@@ -405,7 +405,7 @@ footer
     }
     .service
     {
-        height: 420px;
+        height: 500px;
     }
     .serviceFooterRow
     {
@@ -417,6 +417,19 @@ footer
     .serviceFactsCol
     {
         margin-top: 40px;
+        width: 350px;
+    }
+}
+
+@media (max-width:320px)
+{
+    .container
+    {
+        margin: 0px 5px 0px 5px;
+    }
+    .service
+    {
+        height: auto;;
     }
 }
 
