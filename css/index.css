@@ -67,42 +67,47 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-/* .container
+.container
 {
-    width:800px;
-} */
-
-body
-{
-	
     margin: 0px 50px 0px 50px;
+    max-width:1000px;
 }
 
-.mobileHR
+/* img stuff */
+.services-header-img
 {
-    display: none;
+    width: 100%;
+    height: 200px;
 }
-
+.codeCircle
+{
+    /* margin-left: 118px; */
+    padding-left: 80px;
+}
+/* Nav Stuff */
 nav
 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	margin:20px 0px;
     height: 40px;
-    
-	/* z-index: 1; */
 }
 
 nav a
 {
 	text-decoration: none;
-	color: gray;
+    color: gray;
+    margin-right: 61px;
+}
+nav a:last-child
+{
+    margin-right: 50pxpx;
 }
 
 nav img
 {
-	margin-left: 50px;
+	margin-left: 29px;
 }
 
 nav a:hover
@@ -110,40 +115,10 @@ nav a:hover
 	color: black;
 }
 
-.massiveH1
+/* horizontal rules */
+.mobileHR
 {
-	font-size: 450%;
-}
-
-.attnGrabber
-{
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	margin-left: 100px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-}
-
-.innovOD
-{
-	display: flex;
-	flex-flow: column nowrap;
-    align-items: center;
-    
-}
-
-.attnGrabber.innovOD
-{
-	padding-bottom: 50px;
-}
-
-.getStartedBtn
-{
-	background-color: white;
-	font-size: 16px;
-	padding: 5px 40px;
-	border: 1px solid black;
+    display: none;
 }
 
 hr
@@ -151,9 +126,57 @@ hr
     border: 1.5px solid black;
 }
 
+/* h1-6 stuff */
+.h1Services
+{
+    font-size: 150%;
+    margin-top:20px;
+}
+.massiveH1
+{
+    font-size: 450%;
+    margin-bottom: 0px;
+}
+
+
+.attnGrabber
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-left: 140px;
+	margin-top: 65px;
+	margin-bottom: 75px;
+}
+
+.innovOD
+{
+	display: flex;
+	flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+.getStartedBtn
+{
+	background-color: white;
+	font-size: 16px;
+	
+    border: 1px solid black;
+    margin-top: 26px;
+    padding: 6px 40px;
+}
+
+
+
 .sideBySideTextSections
 {
 	padding: 0px 25px 0px 0px;
+}
+
+.sideBySideTextSections h2
+{
+    margin-bottom: 18px;
 }
 
 .featuresAbout
@@ -161,8 +184,8 @@ hr
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	margin-bottom: 25px;
-	margin-top: 25px;
+	margin-bottom: 37px;
+	margin-top: 28px;
 }
 
 .bottomContent
@@ -183,8 +206,8 @@ hr
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	margin-top:50px;
-	margin-bottom: 20px;
+	margin-top:31px;
+	margin-bottom: 38px;
 }
 
 .sbsTS2
@@ -192,9 +215,14 @@ hr
 	padding: 0px 25px 0px 0px;
 }
 
+footer
+{
+    margin-top:34px;
+}
+
 .copyrightInfo
 {
-	margin-top: 30px;
+	margin-top: 38px;
 	text-align: center;
 }
 
@@ -202,6 +230,68 @@ hr
 {
     display: none;
     
+}
+
+/* service */
+.serviceRow
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+
+.service
+{
+    display: block;
+    /* flex-flow: column nowrap; */
+    width: 425px;
+    height: 225px;
+    border: 1px solid black;
+    background-color: #F4F3F4;
+    padding: 30px;
+}
+
+.service button
+{
+    margin: 10px 0px;
+    background-color: #FFFFFF;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.serviceFooterRow
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+.serviceFactsCol
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.serviceFactsUL
+{
+    list-style-type: square;
+    margin: 5px 20px;
+}
+
+.serviceFactsUL li
+{
+    margin: 5px 0px;
+}
+
+.copyInfo
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top:20px;
 }
 
 @media(max-width: 800px)
