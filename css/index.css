@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5 {
 body
 {
 	
-    margin: 0px 10px 0px 100px;
+    margin: 0px 50px 0px 50px;
 }
 
 .mobileHR
@@ -206,6 +206,10 @@ hr
 
 @media(max-width: 800px)
 {
+    body
+    {
+        margin: 0px 10px 0px 10px;
+    }
     .logo
     {
         display: none;
