@@ -1,3 +1,445 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container
+{
+    margin: 0px 50px 0px 50px;
+    max-width:1000px;
+}
+
+/* img stuff */
+.services-header-img
+{
+    width: 100%;
+    height: 200px;
+}
+.codeCircle
+{
+    /* margin-left: 118px; */
+    padding-left: 80px;
+}
+/* Nav Stuff */
+nav
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin:20px 0px;
+    height: 40px;
+    /* max-width: 100%; */
+}
+
+nav a
+{
+	text-decoration: none;
+    color: gray;
+    /* margin-right: 61px; */
+    margin-right: auto;
+}
+
+
+nav img
+{
+    margin-left: 19px;
+}
+
+nav a:hover
+{
+	color: black;
+}
+
+/* horizontal rules */
+.mobileHR
+{
+    display: none;
+}
+
+hr
+{
+    border: 1.5px solid black;
+}
+
+/* h1-6 stuff */
+.h1Services
+{
+    font-size: 150%;
+    margin-top:20px;
+}
+.massiveH1
+{
+    font-size: 450%;
+    margin-bottom: 0px;
+}
+
+
+.attnGrabber
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	margin-left: 140px;
+	margin-top: 65px;
+	margin-bottom: 75px;
+}
+
+.innovOD
+{
+	display: flex;
+	flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+.getStartedBtn
+{
+	background-color: white;
+	font-size: 16px;
+	
+    border: 1px solid black;
+    margin-top: 26px;
+    padding: 6px 40px;
+}
+
+
+
+.sideBySideTextSections
+{
+	padding: 0px 25px 0px 0px;
+}
+
+.sideBySideTextSections h2
+{
+    margin-bottom: 18px;
+}
+
+.featuresAbout
+{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-bottom: 37px;
+	margin-top: 28px;
+}
+
+.bottomContent
+{
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.middle-img
+{
+    width:100%;
+    height:182px;
+}
+
+.srvProVis
+{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin-top:31px;
+	margin-bottom: 38px;
+}
+
+.sbsTS2
+{
+	padding: 0px 25px 0px 0px;
+}
+
+footer
+{
+    margin-top:34px;
+}
+
+.copyrightInfo
+{
+	margin-top: 38px;
+	text-align: center;
+}
+
+.logoMobile
+{
+    display: none;
+    
+}
+
+/* service */
+.serviceRow
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px;
+}
+
+.service
+{
+    display: block;
+    /* flex-flow: column nowrap; */
+    width: 425px;
+    height: 225px;
+    border: 1px solid black;
+    background-color: #F4F3F4;
+    padding: 30px;
+}
+
+.service button
+{
+    margin: 10px 0px;
+    background-color: #FFFFFF;
+    padding: 5px 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.serviceFooterRow
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+
+.serviceFactsCol
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    width: 400px;
+}
+
+.serviceFactsUL
+{
+    list-style-type: square;
+    margin: 5px 20px;
+}
+
+.serviceFactsUL li
+{
+    margin: 5px 0px;
+}
+
+.copyInfo
+{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top:20px;
+}
+
+@media(max-width: 800px)
+{
+    nav
+    {
+        justify-content: space-between;
+        margin:20px 0px;
+        height: 40px;
+        /* max-width: 100%; */
+    }
+    nav a {margin: auto;}
+    .container
+    {
+        margin: 0px 10px 0px 10px;
+    }
+    .logo
+    {
+        display: none;
+    }
+    .logoMobile
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    .attnGrabber
+    {
+        display: block;
+        margin-left: 0px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .codeCircle
+    {
+        display: none;
+    }
+    .service
+    {
+        height: 320px;
+    }
+}
+
+@media(max-width: 500px)
+{
+    .logo
+    {
+        display: none;
+    }
+    .mobileHR
+    {
+        display: block;
+        border: 1px solid black;
+        width: 100%
+    }
+    nav
+    {
+        margin-top:180px;
+        font-size: 20px;
+        font-weight: bold;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+    }
+    nav a
+    {
+        margin: 10px 0px;;
+    }
+    nav a .mobileHR
+    {
+        margin: 25px;
+    }
+    .attnGrabber
+    {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        margin-left: 0px;
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+    .codeCircle
+    {
+        display: none;
+    }
+    .featuresAbout
+    {
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .sideBySideTextSections
+    {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .middle-img
+    {
+        height: 100px;
+    }
+    .srvProVis
+    {
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        margin-top:50px;
+        margin-bottom: 20px;
+    }
+    .sbsTS2
+    {
+        margin-bottom: 50px;
+    }
+    .services-header-img
+    {
+        display: none;
+    }
+    .servicesOverview
+    {
+        margin-top: 200px;
+    }
+    .service
+    {
+        height: 500px;
+    }
+    .serviceFooterRow
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: column-reverse;
+        margin: 30px 0px;
+    }
+    .serviceFactsCol
+    {
+        margin-top: 40px;
+        width: 350px;
+    }
+}
+
+@media (max-width:320px)
+{
+    .container
+    {
+        margin: 0px 5px 0px 5px;
+    }
+    .service
+    {
+        height: auto;;
+    }
+}
+
+/* This css is hideous. I need to organize better. 
+Only adding this comment to update for a new commit :) */
